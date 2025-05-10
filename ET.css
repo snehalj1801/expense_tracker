@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+  }
+
+body { 
+	font-family: Arial, sans-serif; 
+	/*margin: 200px; */
+	height: 100%;
+	margin: 0;
+
+} 
+
+.hero{
+	background-image: url("expense_img.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100%;
+	/*filter: blur(8px);
+	-webkit-filter: blur(8px);*/
+}
+.hero img{
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.hero img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container { 
+	max-width: 800px; 
+	height: 800px;
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;*/
+	backdrop-filter: blur(40px);
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	/*background-color: #f9f9f9; */
+	/*padding: 20px; */
+	border-radius: 8px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+h1 { 
+	text-align: center; 
+	margin-bottom: 20px; 
+	margin-top: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #C6C7C4;
+} 
+
+/* User Info Styling */
+#user-info {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto; /* Center the element */
+}
+
+#user-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Darker color for contrast */
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#user-info p {
+    font-size: 18px;
+    color: #666; /* Light gray for the budget text */
+    margin: 0;
+}
+
+
+
+#date{
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	font-size: 25px;
+	font-weight: 1000;
+	margin-right: 200px;
+}
+#btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 15px;
+  }
+  
+  /* Darker background on mouse-over */
+#btn:hover {
+	background-color: RoyalBlue;
+}
+
+#logoutBtn {
+	background-color: red; /* Red background */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 12px 20px; /* Some padding */
+	font-size: 15px; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+	display: flex; /* Flexbox for alignment */
+	align-items: center; /* Center items vertically */
+}
+#logoutBtn .fa {
+	margin-right: 5px; /* Space between icon and text */
+}
+
+#taskbar{
+	display: flex;
+	margin-top: 20px;
+}
+
+	
+
+form { 
+	display: flex; 
+	/*justify-content: space-evenly; */
+	margin-bottom: 20px; 
+	margin-top: 50px;
+} 
+
+input[type="text"], 
+input[type="number"] { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	outline: none; 
+} 
+
+input[type="text"]::placeholder, 
+input[type="number"]::placeholder { 
+	color: #999; 
+} 
+
+button { 
+	padding: 10px 20px; 
+	background-color: #4caf50; 
+	color: white; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer; 
+	font-size: 15px;
+	margin-left: 15px;
+} 
+
+button:hover { 
+	background-color: #45a049; 
+} 
+
+.expense-table { 
+	border: 1px solid #ddd; 
+	border-radius: 8px; 
+	overflow: hidden; 
+	width: 80%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+} 
+
+thead th { 
+	background-color: #f2f2f2; 
+	padding: 10px; 
+	text-align: left; 
+} 
+
+tbody td { 
+	padding: 10px; 
+	border-top: 1px solid #ddd; 
+} 
+
+.delete-btn { 
+	color: red; 
+	cursor: pointer; 
+} 
+
+.total-amount { 
+	display: flex;
+	justify-content: space-between;
+	padding: 10px; 
+	text-align: right; 
+	background-color: #f2f2f2; 
+}
+#clrBtn{
+	cursor: pointer;
+	color: red;
+	font-size: 300;
+}
+
+.cross{
+	text-decoration: line-through;
+}

@@ -1,0 +1,30 @@
+<!-- summary.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Summary</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+<body>
+    <div class="summary-container">
+        <h1>Expense Summary</h1>
+        <p><strong>Budget Limit:</strong> ₹<span id="budget-limit"></span></p>
+        <p><strong>Savings:</strong> ₹<span id="savings"></span></p>
+        <h2>Daily Expenses</h2>
+        <table id="expense-summary">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="restartTracking()">Start Fresh</button>
+    </div>
+    <script src="summary.js"></script>
+</body>
+</html>
